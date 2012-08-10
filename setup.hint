@@ -1,5 +1,0 @@
-category: Graphics
-requires: gimp2
-sdesc: "Collection of scripts for GIMP 2.6"
-ldesc: "GIMP-2.6 scripts is a fixed/hacked collection of scripts for use 
-in the new GIMP."
