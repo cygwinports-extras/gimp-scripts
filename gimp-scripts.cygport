@@ -1,5 +1,5 @@
 NAME="gimp-scripts"
-VERSION=2.8.40
+VERSION=2.8.41
 RELEASE=1
 CATEGORY="Graphics"
 SUMMARY="Collection of scripts for GIMP"
@@ -17,6 +17,6 @@ src_install() {
 	cd ${S}
 	insinto /usr/share/gimp/2.0/scripts
 	doins *.scm
-	insinto /usr/share/gimp/2.0/gimpressionist/Presets
-	doins Presets/*
+
+	cp -a gimpressionist gradients patterns ${D}/usr/share/gimp/2.0/
 }
