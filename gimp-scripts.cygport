@@ -1,10 +1,15 @@
+NAME="gimp-scripts"
+VERSION=2.8.40
+RELEASE=1
 CATEGORY="Graphics"
-SUMMARY="Collection of scripts for GIMP 2.6"
+SUMMARY="Collection of scripts for GIMP"
 DESCRIPTION="GIMP-2.8 scripts is a fixed/hacked collection of scripts for use
 in the new GIMP."
 HOMEPAGE="http://www.gimphelp.org/script28.shtml"
-SRC_URI="http://www.gimphelp.org/DL/gimp_scripts-${PV[1]}.${PV[2]}.tar.bz2"
-SRC_DIR="gimp_scripts-${PV[1]}.${PV[2]}"
+SRC_URI="http://www.gimphelp.org/DL/gimp_scripts-${VERSION%.*}.tar.bz2"
+SRC_DIR="gimp_scripts-${VERSION%.*}"
+
+ARCH=noarch
 
 src_compile() { :; }
 
